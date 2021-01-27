@@ -2,15 +2,15 @@
 #include <stdint.h>
 
 /// Value of cells occupied by player one
-const uint8_t P1 = 1;
+const uint8_t P1 = 'O';
 /// Value of cells occupied by player two
-const uint8_t P2 = 2;
+const uint8_t P2 = 'X';
 /// Default connect 4 grid number of rows
 const uint8_t C4_GRID_DEFAULT_WIDTH = 7;
 /// Default connect 4 grid number of cols
 const uint8_t C4_GRID_DEFAULT_HEIGHT = 6;
 /// Default cell value of unoccupied cells
-const uint8_t C4_GRID_DEFAULT_CELL_VALUE = 0;
+const uint8_t C4_GRID_DEFAULT_CELL_VALUE = ' ';
 /// Max allowed grid width
 const uint8_t C4_GRID_MAX_WIDTH = 20;
 /// Max allowed grid width

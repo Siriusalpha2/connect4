@@ -49,3 +49,29 @@ void destroyGrid(struct Connect4Grid* grid) {
 }
 
 ////////////////////////////////////////////////////////////////////////////////
+
+void displayGrid(struct Connect4Grid* grid) {
+    if (!grid || !grid->cells) {
+        puts("[ERROR] displayGrid: grid is empty");
+        return;
+    }
+    int32_t width = (int)grid->width;
+    int32_t height = (int)grid->height;
+
+    printf("\n\n");
+    for (int32_t row = height - 1; row >= 0; --row) {
+        printf("\t|");
+        for (int32_t col = 0; col < width; ++col) {
+            printf(" %c |", grid->cells[row * width + col]);
+        }
+        printf("\n");
+    }
+    printf("\t|");
+    // Draw fancy feet
+    for (int32_t col = 0; col < width; ++col) {
+        printf("---|");
+    }
+    printf("\n\n");
+}
+
+////////////////////////////////////////////////////////////////////////////////

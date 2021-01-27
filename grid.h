@@ -29,3 +29,9 @@ struct Connect4Grid* createGrid(uint8_t width, uint8_t height);
 void destroyGrid(struct Connect4Grid* grid);
 
 ////////////////////////////////////////////////////////////////////////////////
+
+/// Displays current grid content in a terminal
+/// @param grid grid structure to free
+void displayGrid(struct Connect4Grid* grid);
+
+////////////////////////////////////////////////////////////////////////////////
