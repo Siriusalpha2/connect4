@@ -1,0 +1,6 @@
+include(AddGoogleTest)
+
+add_executable(test_connect4Grid test_connect4Grid.cpp)
+target_compile_features(test_connect4Grid PRIVATE cxx_std_17)
+target_link_libraries(test_connect4Grid PUBLIC connect4grid)
+add_gtest(test_connect4Grid)

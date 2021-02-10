@@ -1,11 +1,11 @@
-#include "grid.h"
+#include "grid/Connect4Grid.h"
 
 #include <errno.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
-#include "consts.h"
+#include "common/consts.h"
 
 extern int errno;
 
